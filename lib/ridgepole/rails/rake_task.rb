@@ -1,5 +1,6 @@
 require 'rake'
 require 'rake/tasklib'
+require 'shellwords'
 
 module Ridgepole
   module Rails
