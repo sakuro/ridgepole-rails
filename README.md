@@ -1,7 +1,7 @@
 # Ridgepole-rails
 
 Ridgepole-rails provides two Rake tasks: `ridgepole:export` and `ridgepole:apply`
-They wrap `[ridgepole](https://github.com/winebarrel/ridgepole)`'s `ridgepole --export` and
+They wrap [ridgepole](https://github.com/winebarrel/ridgepole)'s `ridgepole --export` and
 `ridgepole --apply` respectively.
 
 ## Usage
