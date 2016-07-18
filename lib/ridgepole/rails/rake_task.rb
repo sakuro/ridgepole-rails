@@ -26,7 +26,7 @@ module Ridgepole
       end
 
       def initialize(env)
-        @env = env || ENV['RAILS_ENV'] || 'development'
+        @env = env || ENV['RAILS_ENV'] || ENV['RACK_ENV'] || 'development'
       end
 
       private
