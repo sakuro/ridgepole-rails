@@ -9,7 +9,8 @@ module Ridgepole
         task name, :rails_env do |_t, args|
           self.operation = name
           yield self if block_given?
-          sh Command.build(operation, args[:rails_env]).command
+          options = {out: IO::NULL}
+          sh Command.build(operation, args[:rails_env]).command, options
         end
       end
 
