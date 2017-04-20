@@ -1,6 +1,7 @@
 require 'rake'
 require 'rake/tasklib'
 require 'shellwords'
+require 'ridgepole/rails/restore_extensions_on_purge'
 
 module Ridgepole
   module Rails
