@@ -2,10 +2,10 @@ require 'ridgepole/rails/rake_task'
 
 namespace :ridgepole do
   desc 'Export the database schema to Schemafile'
-  Ridgepole::Rails::RakeTask.new('export')
+  Ridgepole::Rails::RakeTask::Export.new
 
   desc 'Apply Schemafile to the database'
-  Ridgepole::Rails::RakeTask.new('apply')
+  Ridgepole::Rails::RakeTask::Apply.new
 end
 
 Rake.application.lookup('db:migrate').clear
