@@ -1,5 +1,5 @@
 module Ridgepole
   module Rails
-    VERSION = '1.0.6'
+    VERSION = -'1.0.7'
   end
 end

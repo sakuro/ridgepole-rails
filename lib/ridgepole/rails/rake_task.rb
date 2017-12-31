@@ -59,20 +59,20 @@ module Ridgepole
       end
 
       def options
-        options_hash = { '-E' => @env, '-c' => 'config/database.yml' }
-        options_hash['--ignore-tables'] = ignore_tables.join(',') if ignore_tables.size > 0
+        options_hash = {'-E' => @env, '-c' => 'config/database.yml'}
+        options_hash['--ignore-tables'] = ignore_tables.join(',') if ignore_tables.present? # rubocop:disable Metrics/LineLength
         options_hash.to_a.flatten
       end
 
       class Export < self
         def command
-          [*RIDGEPOLE_COMMAND, *%w(--export -o Schemafile), *options].shelljoin
+          [*RIDGEPOLE_COMMAND, *%w(--export -o Schemafile), *options].shelljoin # rubocop:disable Lint/UnneededSplatExpansion
         end
       end
 
       class Apply < self
         def command
-          [*RIDGEPOLE_COMMAND, *%w(--apply), *options].shelljoin
+          [*RIDGEPOLE_COMMAND, *%w(--apply), *options].shelljoin # rubocop:disable Lint/UnneededSplatExpansion
         end
       end
     end

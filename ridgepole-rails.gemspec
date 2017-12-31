@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/sakuro/ridgepole-rails"
   s.summary     = "Integrates ridgepole into rails"
   s.description = <<~EOF
-  This gem adds two rake tasks: ridgepole:export and ridgepole:apply to your rails project.
-  It also substitutes some builtin tasks (db:migrate db:schema:dump etc.)
+    This gem adds two rake tasks: ridgepole:export and ridgepole:apply to your rails project.
+    It also substitutes some builtin tasks (db:migrate db:schema:dump etc.)
   EOF
   s.license     = "MIT"
 

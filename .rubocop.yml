@@ -1,0 +1,39 @@
+AllCops:
+  TargetRubyVersion: 2.3
+
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+
+Style/SpecialGlobalVars:
+  Exclude:
+    - '*.gemspec'
+
+Layout/ExtraSpacing:
+  Exclude:
+    - '*.gemspec'
+
+Layout/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: no_space
+
+Layout/SpaceAroundOperators:
+  Exclude:
+    - '*.gemspec'
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Style/StringLiterals:
+  Exclude:
+    - '*.gemspec'
+
+Metrics/LineLength:
+  IgnoreCopDirectives: true
