@@ -72,7 +72,7 @@ module Ridgepole
 
       class Apply < self
         def command
-          [*RIDGEPOLE_COMMAND, *%w(--apply --create-table-with-index), *options].shelljoin # rubocop:disable Lint/UnneededSplatExpansion
+          [*RIDGEPOLE_COMMAND, *%w(--apply --create-table-with-index), *options].shelljoin # rubocop:disable Lint/UnneededSplatExpansion, Metrics/LineLength
         end
       end
     end
