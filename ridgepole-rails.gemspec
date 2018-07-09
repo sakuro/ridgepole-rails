@@ -21,5 +21,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", ">= 5.0.0"
   s.add_dependency "ridgepole", ">= 0.7.1"
-  s.add_development_dependency "rubocop"
+  s.add_development_dependency "rubocop", ">= 0.50.0"
 end
